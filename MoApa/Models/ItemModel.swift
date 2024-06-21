@@ -8,7 +8,8 @@
 import Foundation
 
 // Immutable Struct
-struct ItemModel: Identifiable {
+// Codable add the abbility to decode and encode the data 
+struct ItemModel: Identifiable, Codable {
     let id: String
     let title: String
     let isCompleted: Bool
