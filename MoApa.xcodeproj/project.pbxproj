@@ -14,6 +14,7 @@
 		D9BEAA062C22C25700DBC24F /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BEAA052C22C25700DBC24F /* ListRowView.swift */; };
 		D9BEAA082C22C6E900DBC24F /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BEAA072C22C6E900DBC24F /* AddView.swift */; };
 		D9BEAA0B2C22D82E00DBC24F /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BEAA0A2C22D82E00DBC24F /* ItemModel.swift */; };
+		D9BEAA0E2C233A0000DBC24F /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BEAA0D2C233A0000DBC24F /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		D9BEAA052C22C25700DBC24F /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		D9BEAA072C22C6E900DBC24F /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		D9BEAA0A2C22D82E00DBC24F /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		D9BEAA0D2C233A0000DBC24F /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +59,9 @@
 		D9BEA9F32C22BEB700DBC24F /* MoApa */ = {
 			isa = PBXGroup;
 			children = (
-				D9BEAA092C22D7F800DBC24F /* Models */,
 				D9BEA9F42C22BEB700DBC24F /* MoApaApp.swift */,
+				D9BEAA092C22D7F800DBC24F /* Models */,
+				D9BEAA0C2C2339B600DBC24F /* ViewModels */,
 				D9BEAA022C22BFF700DBC24F /* Views */,
 				D9BEA9F82C22BEB900DBC24F /* Assets.xcassets */,
 				D9BEA9FA2C22BEB900DBC24F /* Preview Content */,
@@ -90,6 +93,14 @@
 				D9BEAA0A2C22D82E00DBC24F /* ItemModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D9BEAA0C2C2339B600DBC24F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D9BEAA0D2C233A0000DBC24F /* ListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 			files = (
 				D9BEAA0B2C22D82E00DBC24F /* ItemModel.swift in Sources */,
 				D9BEAA082C22C6E900DBC24F /* AddView.swift in Sources */,
+				D9BEAA0E2C233A0000DBC24F /* ListViewModel.swift in Sources */,
 				D9BEA9F52C22BEB700DBC24F /* MoApaApp.swift in Sources */,
 				D9BEAA042C22C02C00DBC24F /* ListView.swift in Sources */,
 				D9BEAA062C22C25700DBC24F /* ListRowView.swift in Sources */,

@@ -9,18 +9,21 @@ import SwiftUI
 
 struct ListView: View {
     
-    @State var items: [ItemModel] = [
-      ItemModel(title: "Swimming 🏊🏼‍♂️", isCompleted: false),
-      ItemModel(title: "Jogging 🏃🏻‍♂️", isCompleted: true),
-      ItemModel(title: "Jogging 🏃🏻‍♂️", isCompleted: true),
-    ]
+    @EnvironmentObject var listViewModel: ListViewModel
     
     var body: some View {
         List {
             // A custom component
-            ForEach(items) { item in
+            ForEach(listViewModel.items) { item in
                 ListRowView(item: item)
+                    .onTapGesture {
+                        withAnimation(.linear) {
+                            listViewModel.updateItem(item: item)
+                        }
+                    }
             }
+            .onDelete(perform: listViewModel.deleteItem)
+            .onMove(perform: listViewModel.moveItem)
         }
         .listStyle(PlainListStyle())
         .navigationTitle("MoApa 🤔")
@@ -37,5 +40,6 @@ struct ListView_Previews: PreviewProvider {
          NavigationView {
             ListView()
         }
+         .environmentObject(ListViewModel())
     }
 }
