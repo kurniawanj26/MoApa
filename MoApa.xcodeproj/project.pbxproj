@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D97D94C32C27AB27006933AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D97D94C22C27AB27006933AA /* LaunchScreen.storyboard */; };
 		D9BEA9F52C22BEB700DBC24F /* MoApaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BEA9F42C22BEB700DBC24F /* MoApaApp.swift */; };
 		D9BEA9F92C22BEB900DBC24F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9BEA9F82C22BEB900DBC24F /* Assets.xcassets */; };
 		D9BEA9FC2C22BEB900DBC24F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9BEA9FB2C22BEB900DBC24F /* Preview Assets.xcassets */; };
@@ -15,9 +16,11 @@
 		D9BEAA082C22C6E900DBC24F /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BEAA072C22C6E900DBC24F /* AddView.swift */; };
 		D9BEAA0B2C22D82E00DBC24F /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BEAA0A2C22D82E00DBC24F /* ItemModel.swift */; };
 		D9BEAA0E2C233A0000DBC24F /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BEAA0D2C233A0000DBC24F /* ListViewModel.swift */; };
+		D9BEAA102C2588A900DBC24F /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BEAA0F2C2588A900DBC24F /* NoItemsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D97D94C22C27AB27006933AA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9BEA9F12C22BEB700DBC24F /* MoApa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoApa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9BEA9F42C22BEB700DBC24F /* MoApaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoApaApp.swift; sourceTree = "<group>"; };
 		D9BEA9F82C22BEB900DBC24F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -27,6 +30,7 @@
 		D9BEAA072C22C6E900DBC24F /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		D9BEAA0A2C22D82E00DBC24F /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		D9BEAA0D2C233A0000DBC24F /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		D9BEAA0F2C2588A900DBC24F /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +65,8 @@
 			children = (
 				D9BEA9F42C22BEB700DBC24F /* MoApaApp.swift */,
 				D9BEAA092C22D7F800DBC24F /* Models */,
-				D9BEAA0C2C2339B600DBC24F /* ViewModels */,
 				D9BEAA022C22BFF700DBC24F /* Views */,
+				D9BEAA0C2C2339B600DBC24F /* ViewModels */,
 				D9BEA9F82C22BEB900DBC24F /* Assets.xcassets */,
 				D9BEA9FA2C22BEB900DBC24F /* Preview Content */,
 			);
@@ -81,8 +85,10 @@
 			isa = PBXGroup;
 			children = (
 				D9BEAA032C22C02C00DBC24F /* ListView.swift */,
+				D9BEAA0F2C2588A900DBC24F /* NoItemsView.swift */,
 				D9BEAA072C22C6E900DBC24F /* AddView.swift */,
 				D9BEAA052C22C25700DBC24F /* ListRowView.swift */,
+				D97D94C22C27AB27006933AA /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97D94C32C27AB27006933AA /* LaunchScreen.storyboard in Resources */,
 				D9BEA9FC2C22BEB900DBC24F /* Preview Assets.xcassets in Resources */,
 				D9BEA9F92C22BEB900DBC24F /* Assets.xcassets in Resources */,
 			);
@@ -178,6 +185,7 @@
 				D9BEAA0E2C233A0000DBC24F /* ListViewModel.swift in Sources */,
 				D9BEA9F52C22BEB700DBC24F /* MoApaApp.swift in Sources */,
 				D9BEAA042C22C02C00DBC24F /* ListView.swift in Sources */,
+				D9BEAA102C2588A900DBC24F /* NoItemsView.swift in Sources */,
 				D9BEAA062C22C25700DBC24F /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,9 +318,11 @@
 				DEVELOPMENT_TEAM = WQ7DX8DWT7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MoApa;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,9 +349,11 @@
 				DEVELOPMENT_TEAM = WQ7DX8DWT7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MoApa;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

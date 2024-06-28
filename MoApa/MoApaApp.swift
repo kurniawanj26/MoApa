@@ -31,6 +31,7 @@ struct MoApaApp: App {
              to make all views inside NavigationView
              have access to the listViewModel
              */
+            .navigationViewStyle(StackNavigationViewStyle())
             .environmentObject(listViewModel)
         }
     }
